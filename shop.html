@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop All — Pearl Velvet</title>
+<meta name="description" content="Browse the full Pearl Velvet collection — pearl necklaces, earrings, velvet hair accessories, rings and bracelets.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><circle cx=%2216%22 cy=%2216%22 r=%2211%22 fill=%22%23c6a15b%22/></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="shop">
+
+<div id="site-header-root"></div>
+
+<main>
+  <div class="page-header">
+    <div class="wrap">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Shop</div>
+      <h1>The full collection</h1>
+    </div>
+  </div>
+
+  <section style="padding-top:56px;">
+    <div class="wrap shop-layout">
+      <aside class="shop-filters">
+        <div class="filter-block">
+          <h4>Category</h4>
+          <ul id="filter-category">
+            <li><button class="active" data-filter-cat="All">All pieces</button></li>
+            <li><button data-filter-cat="Necklaces">Necklaces</button></li>
+            <li><button data-filter-cat="Earrings">Earrings</button></li>
+            <li><button data-filter-cat="Hair">Hair accessories</button></li>
+            <li><button data-filter-cat="Rings">Rings</button></li>
+            <li><button data-filter-cat="Bracelets">Bracelets</button></li>
+          </ul>
+        </div>
+        <div class="filter-block">
+          <h4>Price</h4>
+          <ul id="filter-price">
+            <li><button class="active" data-filter-price="all">Any price</button></li>
+            <li><button data-filter-price="0-2000">Under ৳2,000</button></li>
+            <li><button data-filter-price="2000-4000">৳2,000 – ৳4,000</button></li>
+            <li><button data-filter-price="4000-99999">৳4,000+</button></li>
+          </ul>
+        </div>
+      </aside>
+
+      <div>
+        <div class="shop-toolbar">
+          <span class="result-count" id="result-count">12 pieces</span>
+          <select class="sort-select" id="sort-select">
+            <option value="featured">Sort: Featured</option>
+            <option value="price-asc">Price: Low to high</option>
+            <option value="price-desc">Price: High to low</option>
+            <option value="name-asc">Name: A–Z</option>
+          </select>
+        </div>
+        <div class="product-grid" id="shop-grid"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer-root"></div>
+
+<script src="data.js"></script>
+<script src="cart.js"></script>
+<script src="chrome.js"></script>
+<script src="render.js"></script>
+<script src="shop.js"></script>
+</body>
+</html>
